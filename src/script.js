@@ -1,6 +1,4 @@
-gsap.from("#name", { y: -50, duration: 1 });
-
-gsap.from("#about-description", {y: 50, duration: 1});
+gsap.from("#about-description", {x: -150, duration: 1});
 
 gsap.from("#about-image", {x: 150, duration: 1});
 
