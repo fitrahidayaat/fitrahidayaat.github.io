@@ -114,7 +114,7 @@ gsap.from("#icpc-2022", {
 });
 
 gsap.from("#shopee-code-league", {
-    x: -200,
+    x: 200,
     opacity: 0,
     duration: 1,
     scrollTrigger: {
@@ -126,7 +126,7 @@ gsap.from("#shopee-code-league", {
 });
 
 gsap.from("#innovatif", {
-    x: 200,
+    x: -200,
     opacity: 0,
     duration: 1,
     scrollTrigger: {
@@ -138,7 +138,7 @@ gsap.from("#innovatif", {
 });
 
 gsap.from("#ccp", {
-    x: -200,
+    x: 200,
     opacity: 0,
     duration: 1,
     scrollTrigger: {
