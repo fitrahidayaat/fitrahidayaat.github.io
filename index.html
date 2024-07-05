@@ -1,89 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./src/output.css">
-</head>
-<body class="from-black bg-gradient-to-b to-gray-950 text-white p-7">
-    <div class="h-screen">
-        <nav class="flex justify-center text-lg">
-            <ul class="flex">
-                <a href="#about"><li class="px-5 py-3 rounded-lg cursor-pointer hover:bg-slate-800">About</li></a>
-                <li class="px-5 py-3 rounded-lg cursor-pointer hover:bg-slate-800">Projects</li>
-                <li class="px-5 py-3 rounded-lg cursor-pointer hover:bg-slate-800">Experience</li>
-                <li class="px-5 py-3 rounded-lg cursor-pointer hover:bg-slate-800">Achievements</li>
-            </ul>
-        </nav> 
-    
-        <div id="about" class="flex justify-center mt-32">
-            <div class="flex items-center gap-32 px-40">
-                <div class="flex flex-col gap-10" id="about-description">
-                    <h1 class="text-7xl font-bold" id="name">Muhammad Ramdhan Fitra Hidayat</h1>
-                    <p class="text-xl" id="about-text">A student at Telkom University majoring in Informatics, I am dedicated to pursuing a career in the tech industry with a passion for lifelong learning and a competitive spirit. My journey as a competitive programmer has sharpened my problem-solving abilities and fostered a profound grasp of algorithms and computational thinking. This expertise empowers me to confront intricate challenges head-on, consistently delivering top-tier software solutions.</p>
-                    <div class="flex gap-3">
-                        <a href="https://www.linkedin.com/in/fitrahidayaat/" class="px-3 py-2 bg-gray-800 rounded hover:bg-gray-900">LinkedIn</a>
-                        <a href="https://github.com/fitrahidayaat" class="px-3 py-2 bg-gray-800 rounded hover:bg-gray-900">GitHub</a>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="./css/output.css" />
+    </head>
+    <body class="from-black bg-gradient-to-b to-gray-950 text-white p-7">
+        <div class="">
+            <nav class="flex justify-center text-lg">
+                <ul class="flex">
+                    <a href="#about"
+                        ><li
+                            class="px-5 py-3 rounded-lg cursor-pointer hover:bg-slate-800"
+                        >
+                            About
+                        </li></a
+                    >
+                    <a href="#projects"
+                        ><li
+                            class="px-5 py-3 rounded-lg cursor-pointer hover:bg-slate-800"
+                        >
+                            Projects
+                        </li></a
+                    >
+                    <a href="#experience"
+                        ><li
+                            class="px-5 py-3 rounded-lg cursor-pointer hover:bg-slate-800"
+                        >
+                            Experience
+                        </li></a
+                    >
+                    <a href="#achievements"
+                        ><li
+                            class="px-5 py-3 rounded-lg cursor-pointer hover:bg-slate-800"
+                        >
+                            Achievements
+                        </li></a
+                    >
+                </ul>
+            </nav>
+
+            <div id="about" class="flex justify-center mt-32">
+                <div class="flex items-center gap-32 px-40">
+                    <div class="flex flex-col gap-10" id="about-description">
+                        <h1 class="text-7xl font-semibold" id="name">
+                            Muhammad Ramdhan Fitra Hidayat
+                        </h1>
+                        <p class="text-lg" id="about-text">
+                            A student at Telkom University majoring in
+                            Informatics, I am dedicated to pursuing a career in
+                            the tech industry with a passion for lifelong
+                            learning and a competitive spirit. My journey as a
+                            competitive programmer has sharpened my
+                            problem-solving abilities and fostered a profound
+                            grasp of algorithms and computational thinking. This
+                            expertise empowers me to confront intricate
+                            challenges head-on, consistently delivering top-tier
+                            software solutions.
+                        </p>
+                        <div class="flex gap-3">
+                            <a
+                                href="https://www.linkedin.com/in/fitrahidayaat/"
+                                class="px-3 py-2 bg-gray-800 rounded hover:bg-gray-900"
+                                >LinkedIn</a
+                            >
+                            <a
+                                href="https://github.com/fitrahidayaat"
+                                class="px-3 py-2 bg-gray-800 rounded hover:bg-gray-900"
+                                >GitHub</a
+                            >
+                        </div>
                     </div>
+                    <img
+                        src="./img/foto-profil.jpg"
+                        alt="foto-profil"
+                        class="rounded-full w-[500px]"
+                        id="about-image"
+                    />
                 </div>
-                <img src="./src/img/foto-profil.jpg" alt="foto-profil" class="rounded-full w-[500px]" id="about-image">
             </div>
         </div>
-    </div>
 
-    <div id="Projects" class="flex items-center flex-col px-40">
-        <h2 class="text-4xl font-bold">Projects</h2>
-        <hr class="bg-white h-[0.3px] w-96 mt-5">
-        <div class="flex items-center gap-32  mt-20 flex-col w-full ">
-            <div id="algorithms-visualizer" class="flex w-full gap-10">
-                <img src="./src/img/algorithms-visualizer.png" alt="" srcset="" class="w-[500px] rounded-3xl">
-                <div class="flex flex-col gap-7">
-                    <h3 class="text-4xl font-bold">Algorithms-Visualizer</h3>
-                    <p class="text-lg">This project aims to visualize how some algorithms like path-finder and sorting work through animation</p>
-
-                    <div class="flex gap-3">
-                        <a href="https://github.com/fitrahidayaat/Algorithms-Visualizer" class="px-3 py-2 bg-slate-800 hover:bg-slate-900 rounded">Source Code</a>
-                        <a href="https://algorithms-visualizer-ten.vercel.app/" class="px-3 py-2 bg-slate-800 hover:bg-slate-900 rounded">Demo</a>
-                    </div>
-                </div>
-            </div>
-
-            <div id="genius" class="flex w-full gap-10">
-                <div class="flex flex-col gap-7">
-                    <h3 class="text-4xl font-bold">Genius</h3>
-                    <p>This interactive learning web application, built using Tailwind and the Laravel framework, enables parents to create
-                        learning missions that can be completed by children and verified through a submission management system based on
-                        MySQL database.
+        <div id="projects" class="flex items-center flex-col px-40 py-20">
+            <h2 class="text-4xl font-bold">Projects</h2>
+            <hr class="bg-white h-[0.3px] w-96 mt-5" />
+            <div class="flex items-center gap-32 mt-20 flex-col w-full">
+                <div id="algorithms-visualizer" class="flex w-full gap-10">
+                    <img
+                        src="./img/algorithms-visualizer.png"
+                        class="rounded-3xl"
+                        width="500"
+                    />
+                    <div class="flex flex-col gap-7">
+                        <h3 class="text-4xl font-bold">
+                            Algorithms-Visualizer
+                        </h3>
+                        <p class="text-lg">
+                            This project aims to visualize how some algorithms
+                            like path-finder and sorting work through animation
                         </p>
 
-                    <div class="flex gap-3">
-                        <a href="https://github.com/fitrahidayaat/genius-web" class="px-3 py-2 bg-slate-800 hover:bg-slate-900 rounded">Source Code</a>
+                        <div class="flex gap-3">
+                            <a
+                                href="https://github.com/fitrahidayaat/Algorithms-Visualizer"
+                                class="px-3 py-2 bg-slate-800 hover:bg-slate-900 rounded"
+                                >Source Code</a
+                            >
+                            <a
+                                href="https://algorithms-visualizer-ten.vercel.app/"
+                                class="px-3 py-2 bg-slate-800 hover:bg-slate-900 rounded"
+                                >Demo</a
+                            >
+                        </div>
                     </div>
                 </div>
-                <img src="./src/img/genius.png" alt="" srcset="" class="w-[500px] rounded-3xl">
+
+                <div id="genius" class="flex w-full gap-10">
+                    <img
+                        src="./img/genius.png"
+                        class="rounded-3xl"
+                        width="500"
+                    />
+                    <div class="flex flex-col gap-7">
+                        <h3 class="text-4xl font-bold">Genius</h3>
+                        <p>
+                            This interactive learning web application, built
+                            using Tailwind and the Laravel framework, enables
+                            parents to create learning missions that can be
+                            completed by children and verified through a
+                            submission management system based on MySQL
+                            database.
+                        </p>
+
+                        <div class="flex gap-3">
+                            <a
+                                href="https://github.com/fitrahidayaat/genius-web"
+                                class="px-3 py-2 bg-slate-800 hover:bg-slate-900 rounded"
+                                >Source Code</a
+                            >
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div id="experience" class="flex items-center flex-col px-40 mt-40">
-        <h2 class="text-4xl font-bold">Experience</h2>
-        <hr class="bg-white h-[0.3px] w-96 mt-5">
-    </div>
-    
-    <div id="achievements" class="flex items-center flex-col px-40 mt-40">
-        <h2 class="text-4xl font-bold">Achievements</h2>
-        <hr class="bg-white h-[0.3px] w-96 mt-5">
-    </div>
+        <div id="experience" class="flex items-center flex-col px-40 mt-40">
+            <h2 class="text-4xl font-bold">Experience</h2>
+            <hr class="bg-white h-[0.3px] w-96 mt-5" />
+            <div class="flex items-center gap-32 mt-20 flex-col w-full">
+                <div id="computing-lab" class="flex w-full gap-10">
+                    <img
+                        src="./img/computing-lab.png"
+                        class="rounded-3xl -mt-16 -mb-16"
+                        width="500"
+                    />
+                    <div class="flex flex-col gap-7">
+                        <h3 class="text-4xl font-bold">
+                            Laboratory Assistant &mdash; Computing Laboratory
+                        </h3>
+                        <p class="text-lg">
+                            Manage the computing lab’s equipment, software, and
+                            network, ensuring optimal performance. Develop and
+                            implement lab policies and procedures for efficiency
+                            and standardization. Supervise and train lab
+                            assistants and users, promoting continuous learning
+                            and improvement.
+                        </p>
+                    </div>
+                </div>
 
-    <div id="Achievements">
+                <div id="proclub" class="flex w-full gap-10">
+                    <img
+                        src="./img/proclub.png"
+                        class="rounded-3xl"
+                        width="500"
+                    />
+                    <div class="flex flex-col gap-7">
+                        <h3 class="text-4xl font-bold">
+                            Internal Organizer &mdash; Proclub
+                        </h3>
+                        <p>
+                            Responsible for coordinating and managing various
+                            activities and events. My role involves planning,
+                            scheduling, and overseeing events to ensure they are
+                            executed successfully.
+                        </p>
+                    </div>
+                </div>
 
-    </div>
+                <div id="lecturer-assistant" class="flex w-full gap-10">
+                    <img
+                        src="./img/tel-u.png"
+                        class="rounded-3xl bg-white"
+                        width="500"
+                        height="200"
+                    />
+                    <div class="flex flex-col gap-7">
+                        <h3 class="text-4xl font-bold">
+                            Lecturer Assistant &mdash; Telkom University
+                        </h3>
+                        <p>
+                            Assisting the lecturer in teaching and grading
+                            Advanced Calculus courses for undergraduate
+                            students.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
+        <div id="achievements" class="flex items-center flex-col px-40 mt-40">
+            <h2 class="text-4xl font-bold">Achievements</h2>
+            <hr class="bg-white h-[0.3px] w-96 mt-5" />
+        </div>
 
-
-    <script src="./src/js/gsap.min.js"></script>
-    <script src="./src/js/ScrollTrigger.min.js"></script>
-    <script src="./src/script.js"></script>
-</body>
+        <script src="./js/gsap.min.js"></script>
+        <script src="./js/ScrollTrigger.min.js"></script>
+        <script src="./js/script.js"></script>
+    </body>
 </html>
