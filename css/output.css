@@ -765,3 +765,9 @@ video {
     flex-wrap: nowrap;
   }
 }
+
+@media (min-width: 1024px) {
+  .lg\:flex-nowrap {
+    flex-wrap: nowrap;
+  }
+}
