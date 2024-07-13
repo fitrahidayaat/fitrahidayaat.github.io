@@ -5,12 +5,12 @@ gsap.from("#about-image", {x: 150, duration: 1});
 // GSAP Animation
 gsap.registerPlugin(ScrollTrigger);
 
-gsap.from("#investmen-calculator", {
+gsap.from("#investment-calculator", {
     x: -200,
     opacity: 0,
     duration: 1,
     scrollTrigger: {
-        trigger: "#investmen-calculator",
+        trigger: "#investment-calculator",
         start: "top 80%", // Trigger animation when top of element is 80% in view
         end: "bottom 20%", // Trigger animation when bottom of element is 20% out of view
         toggleActions: "play none none reverse", // How to toggle animation play and reverse
