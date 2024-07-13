@@ -5,170 +5,35 @@ gsap.from("#about-image", {x: 150, duration: 1});
 // GSAP Animation
 gsap.registerPlugin(ScrollTrigger);
 
-gsap.from("#investment-calculator", {
-    x: -200,
-    opacity: 0,
-    duration: 1,
-    scrollTrigger: {
-        trigger: "#investment-calculator",
-        start: "top 80%", // Trigger animation when top of element is 80% in view
-        end: "bottom 20%", // Trigger animation when bottom of element is 20% out of view
-        toggleActions: "play none none reverse", // How to toggle animation play and reverse
-    }
-});
+const generateAnimation = (selector, fromX) => {
+    const timeline = gsap.timeline({
+        scrollTrigger: {
+            trigger: selector,
+            start: "top 90%", // Trigger animation when top of element is 80% in view
+            end: "bottom 80%", // Trigger animation when bottom of element is 20% out of view
+            scrub: 1, // Smoothly scrub through animation
+            // refreshPriority: 'high' // Ensure high refresh priority for smoother animation
+        }
+    });
 
-gsap.from("#tic-tac-toe", {
-    x: 200,
-    opacity: 0,
-    duration: 1,
-    scrollTrigger: {
-        trigger: "#tic-tac-toe",
-        start: "top 80%", // Trigger animation when top of element is 80% in view
-        end: "bottom 20%", // Trigger animation when bottom of element is 20% out of view
-        toggleActions: "play none none reverse", // How to toggle animation play and reverse
-    }
-});
+    timeline.from(selector, {
+        x: fromX,
+        opacity: 0,
+        duration: 1,
+    });
+}
 
-gsap.from("#algorithms-visualizer", {
-    x: -200,
-    opacity: 0,
-    duration: 1,
-    scrollTrigger: {
-        trigger: "#algorithms-visualizer",
-        start: "top 80%", // Trigger animation when top of element is 80% in view
-        end: "bottom 20%", // Trigger animation when bottom of element is 20% out of view
-        toggleActions: "play none none reverse", // How to toggle animation play and reverse
-    }
-});
-
-gsap.from("#genius", {
-    x: 200,
-    opacity: 0,
-    duration: 1,
-    scrollTrigger: {
-        trigger: "#genius",
-        start: "top 80%", // Trigger animation when top of element is 80% in view
-        end: "bottom 20%", // Trigger animation when bottom of element is 20% out of view
-        toggleActions: "play none none reverse", // How to toggle animation play and reverse
-    }
-});
-
-gsap.from("#computing-lab", {
-    x: -200,
-    opacity: 0,
-    duration: 1,
-    scrollTrigger: {
-        trigger: "#computing-lab",
-        start: "top 80%", // Trigger animation when top of element is 80% in view
-        end: "bottom 20%", // Trigger animation when bottom of element is 20% out of view
-        toggleActions: "play none none reverse", // How to toggle animation play and reverse
-    }
-});
-
-gsap.from("#proclub", {
-    x: 200,
-    opacity: 0,
-    duration: 1,
-    scrollTrigger: {
-        trigger: "#proclub",
-        start: "top 80%", // Trigger animation when top of element is 80% in view
-        end: "bottom 20%", // Trigger animation when bottom of element is 20% out of view
-        toggleActions: "play none none reverse", // How to toggle animation play and reverse
-    }
-});
-
-gsap.from("#lecturer-assistant", {
-    x: -200,
-    opacity: 0,
-    duration: 1,
-    scrollTrigger: {
-        trigger: "#lecturer-assistant",
-        start: "top 80%", // Trigger animation when top of element is 80% in view
-        end: "bottom 20%", // Trigger animation when bottom of element is 20% out of view
-        toggleActions: "play none none reverse", // How to toggle animation play and reverse
-    }
-});
-
-gsap.from("#icpc-2023", {
-    x: 200,
-    opacity: 0,
-    duration: 1,
-    scrollTrigger: {
-        trigger: "#icpc-2023",
-        start: "top 80%", // Trigger animation when top of element is 80% in view
-        end: "bottom 20%", // Trigger animation when bottom of element is 20% out of view
-        toggleActions: "play none none reverse", // How to toggle animation play and reverse
-    }
-});
-
-gsap.from("#gemastik", {
-    x: -200,
-    opacity: 0,
-    duration: 1,
-    scrollTrigger: {
-        trigger: "#gemastik",
-        start: "top 80%", // Trigger animation when top of element is 80% in view
-        end: "bottom 20%", // Trigger animation when bottom of element is 20% out of view
-        toggleActions: "play none none reverse", // How to toggle animation play and reverse
-    }
-});
-
-gsap.from("#hology", {
-    x: 200,
-    opacity: 0,
-    duration: 1,
-    scrollTrigger: {
-        trigger: "#hology",
-        start: "top 80%", // Trigger animation when top of element is 80% in view
-        end: "bottom 20%", // Trigger animation when bottom of element is 20% out of view
-        toggleActions: "play none none reverse", // How to toggle animation play and reverse
-    }
-});
-
-gsap.from("#icpc-2022", {
-    x: -200,
-    opacity: 0,
-    duration: 1,
-    scrollTrigger: {
-        trigger: "#icpc-2022",
-        start: "top 80%", // Trigger animation when top of element is 80% in view
-        end: "bottom 20%", // Trigger animation when bottom of element is 20% out of view
-        toggleActions: "play none none reverse", // How to toggle animation play and reverse
-    }
-});
-
-gsap.from("#shopee-code-league", {
-    x: 200,
-    opacity: 0,
-    duration: 1,
-    scrollTrigger: {
-        trigger: "#shopee-code-league",
-        start: "top 80%", // Trigger animation when top of element is 80% in view
-        end: "bottom 20%", // Trigger animation when bottom of element is 20% out of view
-        toggleActions: "play none none reverse", // How to toggle animation play and reverse
-    }
-});
-
-gsap.from("#innovatif", {
-    x: -200,
-    opacity: 0,
-    duration: 1,
-    scrollTrigger: {
-        trigger: "#innovatif",
-        start: "top 80%", // Trigger animation when top of element is 80% in view
-        end: "bottom 20%", // Trigger animation when bottom of element is 20% out of view
-        toggleActions: "play none none reverse", // How to toggle animation play and reverse
-    }
-});
-
-gsap.from("#ccp", {
-    x: 200,
-    opacity: 0,
-    duration: 1,
-    scrollTrigger: {
-        trigger: "#ccp",
-        start: "top 80%", // Trigger animation when top of element is 80% in view
-        end: "bottom 20%", // Trigger animation when bottom of element is 20% out of view
-        toggleActions: "play none none reverse", // How to toggle animation play and reverse
-    }
-});
+generateAnimation("#investment-calculator", -200);
+generateAnimation("#tic-tac-toe", -200);
+generateAnimation("#algorithms-visualizer", -200);
+generateAnimation("#genius", -200);
+generateAnimation("#computing-lab", -200);
+generateAnimation("#proclub", -200);
+generateAnimation("#lecturer-assistant", -200);
+generateAnimation("#icpc-2023", -200);
+generateAnimation("#gemastik", -200);
+generateAnimation("#hology", -200);
+generateAnimation("#icpc-2022", -200);
+generateAnimation("#shopee-code-league", -200);
+generateAnimation("#innovatif", -200);
+generateAnimation("#ccp", -200);
